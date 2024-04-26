@@ -4,6 +4,8 @@ using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+/*
+
 public class MouseManager : MonoBehaviour
 {
     
@@ -77,6 +79,7 @@ public class MouseManager : MonoBehaviour
         //}
     //} 
 
+*/
 
 
 
@@ -89,13 +92,12 @@ public class MouseManager : MonoBehaviour
 
 
 
-
-    //public class MouseManager : MonoBehaviour
-    //{
-
+    public class MouseManager : MonoBehaviour
+    {
 
 
-    /*
+
+    
 
         [Header("Mouse Info")]
         public Vector3 clickStartLocation;
@@ -162,5 +164,5 @@ public class MouseManager : MonoBehaviour
             }
         }
     }
-    */
-}
+    
+//}
