@@ -110,6 +110,9 @@ public class MouseManager : MonoBehaviour
         public Transform slimeTransform;
         public Rigidbody slimeRigidbody;
 
+        [Header("Lives")]
+        public LivesManager livesManager;
+
 
         private Vector3 orignalSlimePosition;
         private Quaternion originalSlimeRotation;
@@ -125,10 +128,10 @@ public class MouseManager : MonoBehaviour
 
         void Update()
         {
-            //if (livesManager.lives < 0)
-           // {
-           //     return;
-           // }
+            if (livesManager.lives < 0)
+           {
+                return;
+           }
 
             if (Input.GetMouseButtonDown(0))
             {
@@ -160,7 +163,7 @@ public class MouseManager : MonoBehaviour
                 slimeRigidbody.isKinematic = true;
                 slimeTransform.position = orignalSlimePosition;
                 slimeTransform.rotation = originalSlimeRotation;
-                //livesManager.RemoveLife();
+                livesManager.RemoveLife();
             }
         }
     }
