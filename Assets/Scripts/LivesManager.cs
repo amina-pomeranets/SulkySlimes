@@ -11,6 +11,10 @@ public class LivesManager : MonoBehaviour
     public void RemoveLife()
     {
         lives -= 1;
+        hearts[lives].SetActive(false);
         print("You lost a life! Lives: " + lives);
+
+        Invoke("Reload", 2);
+
     }
 }

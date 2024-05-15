@@ -128,10 +128,10 @@ public class MouseManager : MonoBehaviour
 
         void Update()
         {
-            if (livesManager.lives < 0)
-           {
+            if (livesManager.lives < 1)
+            {
                 return;
-           }
+            }
 
             if (Input.GetMouseButtonDown(0))
             {
